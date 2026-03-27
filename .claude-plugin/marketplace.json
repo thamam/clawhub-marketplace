@@ -1,0 +1,46 @@
+{
+  "name": "clawhub",
+  "owner": {
+    "name": "Tomer Hamam",
+    "email": "tomerhamam@gmail.com"
+  },
+  "metadata": {
+    "description": "ClawHub — Operations, telemetry, content, and lifecycle management for the Claw bot fleet",
+    "version": "1.0.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "claw-ops",
+      "source": "./plugins/claw-ops",
+      "version": "0.2.0",
+      "description": "Bot deployment, health checks, config review, and environment guard for the Claw fleet",
+      "category": "operations",
+      "keywords": ["deploy", "health", "config", "env-guard", "bot-ops"]
+    },
+    {
+      "name": "bot-dashboard",
+      "source": "./plugins/bot-dashboard",
+      "version": "1.0.3",
+      "description": "UTI telemetry dashboard — onboard, status, offboard bots with sidecar bridge support",
+      "category": "telemetry",
+      "keywords": ["telemetry", "dashboard", "monitoring", "onboarding", "sidecar"]
+    },
+    {
+      "name": "claw-content",
+      "source": "./plugins/claw-content",
+      "version": "0.1.0",
+      "description": "Content skills for Claw bots — web search, Hebrew RTL handling, NotebookLM integration",
+      "category": "content",
+      "keywords": ["web-search", "hebrew", "rtl", "notebooklm", "content"]
+    },
+    {
+      "name": "claw-lifecycle",
+      "source": "./plugins/claw-lifecycle",
+      "version": "0.1.0",
+      "description": "Lifecycle management — self-improvement routines, inter-bot escalation, telemetry push protocol",
+      "category": "lifecycle",
+      "keywords": ["self-improve", "escalate", "telemetry", "lifecycle"]
+    }
+  ]
+}

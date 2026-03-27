@@ -1,0 +1,10 @@
+{
+  "name": "claw-content",
+  "description": "Content creation, web search, and Hebrew RTL handling for the Claw bot fleet",
+  "version": "0.1.0",
+  "author": {
+    "name": "Tomer Hamam"
+  },
+  "license": "MIT",
+  "keywords": ["bots", "content", "notebooklm", "search", "hebrew", "rtl"]
+}

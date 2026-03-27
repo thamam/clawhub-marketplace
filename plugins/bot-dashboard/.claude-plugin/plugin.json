@@ -1,0 +1,19 @@
+{
+  "name": "bot-dashboard",
+  "description": "Onboard bots to the UTI telemetry dashboard — register, create sidecar bridges, and verify connectivity for any bot framework",
+  "version": "1.0.3",
+  "author": {
+    "name": "Tomer Hamam",
+    "email": "tomerhamam@gmail.com"
+  },
+  "keywords": [
+    "telemetry",
+    "dashboard",
+    "bot",
+    "onboarding",
+    "sidecar",
+    "monitoring",
+    "UTI"
+  ],
+  "commands": "./commands/"
+}

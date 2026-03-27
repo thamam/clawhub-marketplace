@@ -1,0 +1,10 @@
+{
+  "name": "claw-ops",
+  "description": "Core operations — deploy, health checks, config review, and env guard for the Claw bot fleet",
+  "version": "0.2.0",
+  "author": {
+    "name": "Tomer Hamam"
+  },
+  "license": "MIT",
+  "keywords": ["bots", "openclaw", "letta", "nanoclaw", "openjarvis", "operations", "deploy", "health"]
+}

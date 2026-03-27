@@ -1,0 +1,10 @@
+{
+  "name": "claw-lifecycle",
+  "description": "Bot lifecycle management — self-improvement, escalation, and telemetry for the Claw bot fleet",
+  "version": "0.1.0",
+  "author": {
+    "name": "Tomer Hamam"
+  },
+  "license": "MIT",
+  "keywords": ["bots", "lifecycle", "improvement", "escalation", "telemetry"]
+}
