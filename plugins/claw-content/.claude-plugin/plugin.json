@@ -6,5 +6,8 @@
     "name": "Tomer Hamam"
   },
   "license": "MIT",
-  "keywords": ["bots", "content", "notebooklm", "search", "hebrew", "rtl"]
+  "keywords": ["bots", "content", "notebooklm", "search", "hebrew", "rtl"],
+  "autoDiscover": {
+    "skills": "skills/*"
+  }
 }

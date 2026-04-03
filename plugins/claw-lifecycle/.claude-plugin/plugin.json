@@ -6,5 +6,8 @@
     "name": "Tomer Hamam"
   },
   "license": "MIT",
-  "keywords": ["bots", "lifecycle", "improvement", "escalation", "telemetry"]
+  "keywords": ["bots", "lifecycle", "improvement", "escalation", "telemetry"],
+  "autoDiscover": {
+    "skills": "skills/*"
+  }
 }
