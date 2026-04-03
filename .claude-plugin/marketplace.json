@@ -5,42 +5,65 @@
     "email": "tomerhamam@gmail.com"
   },
   "metadata": {
-    "description": "ClawHub — Operations, telemetry, content, and lifecycle management for the Claw bot fleet",
-    "version": "1.1.0",
+    "description": "ClawHub \u2014 Operations, telemetry, content, and lifecycle management for the Claw bot fleet",
+    "version": "1.2.0",
     "pluginRoot": "./plugins"
   },
   "plugins": [
     {
       "name": "claw-ops",
       "source": "./plugins/claw-ops",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "description": "Bot deployment, health checks, config review, and environment guard for the Claw fleet",
       "category": "operations",
-      "keywords": ["deploy", "health", "config", "env-guard", "bot-ops"]
+      "keywords": [
+        "deploy",
+        "health",
+        "config",
+        "env-guard",
+        "bot-ops"
+      ]
     },
     {
       "name": "bot-dashboard",
       "source": "./plugins/bot-dashboard",
       "version": "1.0.3",
-      "description": "UTI telemetry dashboard — onboard, status, offboard bots with sidecar bridge support",
+      "description": "UTI telemetry dashboard \u2014 onboard, status, offboard bots with sidecar bridge support",
       "category": "telemetry",
-      "keywords": ["telemetry", "dashboard", "monitoring", "onboarding", "sidecar"]
+      "keywords": [
+        "telemetry",
+        "dashboard",
+        "monitoring",
+        "onboarding",
+        "sidecar"
+      ]
     },
     {
       "name": "claw-content",
       "source": "./plugins/claw-content",
-      "version": "0.1.0",
-      "description": "Content skills for Claw bots — web search, Hebrew RTL handling, NotebookLM integration",
+      "version": "0.1.1",
+      "description": "Content skills for Claw bots \u2014 web search, Hebrew RTL handling, NotebookLM integration",
       "category": "content",
-      "keywords": ["web-search", "hebrew", "rtl", "notebooklm", "content"]
+      "keywords": [
+        "web-search",
+        "hebrew",
+        "rtl",
+        "notebooklm",
+        "content"
+      ]
     },
     {
       "name": "claw-lifecycle",
       "source": "./plugins/claw-lifecycle",
-      "version": "0.1.0",
-      "description": "Lifecycle management — self-improvement routines, inter-bot escalation, telemetry push protocol",
+      "version": "0.1.1",
+      "description": "Lifecycle management \u2014 self-improvement routines, inter-bot escalation, telemetry push protocol",
       "category": "lifecycle",
-      "keywords": ["self-improve", "escalate", "telemetry", "lifecycle"]
+      "keywords": [
+        "self-improve",
+        "escalate",
+        "telemetry",
+        "lifecycle"
+      ]
     }
   ]
 }

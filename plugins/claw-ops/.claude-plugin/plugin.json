@@ -1,7 +1,7 @@
 {
   "name": "claw-ops",
   "description": "Core operations — deploy, health checks, config review, and env guard for the Claw bot fleet",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": {
     "name": "Tomer Hamam"
   },

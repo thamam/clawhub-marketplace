@@ -1,7 +1,7 @@
 {
   "name": "claw-content",
   "description": "Content creation, web search, and Hebrew RTL handling for the Claw bot fleet",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": {
     "name": "Tomer Hamam"
   },
