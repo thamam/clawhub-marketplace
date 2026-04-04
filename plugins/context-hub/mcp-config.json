@@ -1,1 +1,6 @@
-{}
+{
+  "context-hub": {
+    "command": "chub-mcp",
+    "args": []
+  }
+}
