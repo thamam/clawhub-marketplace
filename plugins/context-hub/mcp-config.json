@@ -1,6 +1,6 @@
 {
   "context-hub": {
-    "command": "chub-mcp",
+    "command": "/Users/tomerhamam/.nvm/versions/node/v22.21.1/bin/chub-mcp",
     "args": []
   }
 }
