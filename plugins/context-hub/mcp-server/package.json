@@ -1,0 +1,19 @@
+{
+  "name": "@clawhub/context-hub-mcp",
+  "version": "1.0.0",
+  "description": "Progressive-disclosure MCP server for Context Hub (chub)",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^22.0.0"
+  }
+}

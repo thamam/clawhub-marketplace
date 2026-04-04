@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "ClawHub \u2014 Operations, telemetry, content, and lifecycle management for the Claw bot fleet",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "pluginRoot": "./plugins"
   },
   "plugins": [
@@ -63,6 +63,21 @@
         "escalate",
         "telemetry",
         "lifecycle"
+      ]
+    },
+    {
+      "name": "context-hub",
+      "source": "./plugins/context-hub",
+      "version": "1.0.0",
+      "description": "Context Hub (chub) — search, fetch, and annotate fleet docs and skills via progressive MCP",
+      "category": "knowledge",
+      "keywords": [
+        "context-hub",
+        "chub",
+        "docs",
+        "skills",
+        "knowledge",
+        "fleet"
       ]
     }
   ]

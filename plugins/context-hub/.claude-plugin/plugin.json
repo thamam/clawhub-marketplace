@@ -1,0 +1,18 @@
+{
+  "name": "context-hub",
+  "version": "1.0.0",
+  "description": "Context Hub (chub) — search, fetch, and annotate fleet docs and skills via progressive MCP",
+  "author": {
+    "name": "Tomer Hamam",
+    "email": "tomerhamam@gmail.com"
+  },
+  "keywords": [
+    "context-hub",
+    "chub",
+    "docs",
+    "skills",
+    "knowledge",
+    "fleet"
+  ],
+  "mcpServers": "./mcp-config.json"
+}
