@@ -1,6 +1,1 @@
-{
-  "context-hub": {
-    "command": "node",
-    "args": ["./mcp-server/dist/index.js"]
-  }
-}
+{}
