@@ -165,6 +165,79 @@ server.tool(
 );
 
 // ---------------------------------------------------------------------------
+// Tool 4: chub_list — list all entries (read-only)
+// ---------------------------------------------------------------------------
+
+server.tool(
+  "chub_list",
+  "List all available docs and skills in Context Hub.",
+  {
+    tags: z
+      .string()
+      .optional()
+      .describe("Comma-separated tag filter"),
+    lang: z
+      .string()
+      .optional()
+      .describe("Filter by language (e.g. python, js)"),
+    limit: z
+      .number()
+      .int()
+      .min(1)
+      .max(500)
+      .optional()
+      .describe("Max entries (default 50)"),
+  },
+  async ({ tags, lang, limit }) => {
+    try {
+      const args = ["list"];
+      if (tags) args.push("--tags", tags);
+      if (lang) args.push("--lang", lang);
+      if (limit) args.push("--limit", String(limit));
+      const out = await chub(args);
+      return text(out);
+    } catch (e) {
+      return error(String(e));
+    }
+  }
+);
+
+// ---------------------------------------------------------------------------
+// Tool 5: chub_feedback — rate entries (write)
+// ---------------------------------------------------------------------------
+
+server.tool(
+  "chub_feedback",
+  "Send quality feedback (thumbs up/down) for a doc or skill to help authors improve content.",
+  {
+    id: z.string().describe("Entry ID to rate (e.g. openai/chat)"),
+    rating: z.enum(["up", "down"]).describe("Thumbs up or down"),
+    comment: z
+      .string()
+      .optional()
+      .describe("Optional comment explaining the rating"),
+    labels: z
+      .string()
+      .optional()
+      .describe(
+        "Comma-separated labels: accurate, well-structured, helpful, good-examples, " +
+        "outdated, inaccurate, incomplete, wrong-examples, wrong-version, poorly-structured"
+      ),
+  },
+  async ({ id, rating, comment, labels }) => {
+    try {
+      const args = ["feedback", id, rating];
+      if (comment) args.push("--comment", comment);
+      if (labels) args.push("--labels", labels);
+      const out = await chub(args);
+      return text(out);
+    } catch (e) {
+      return error(String(e));
+    }
+  }
+);
+
+// ---------------------------------------------------------------------------
 // Resource: registry overview (zero tool-token cost)
 // ---------------------------------------------------------------------------
 
