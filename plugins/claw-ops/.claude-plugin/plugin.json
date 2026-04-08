@@ -9,7 +9,7 @@
   "keywords": ["bots", "openclaw", "letta", "nanoclaw", "openjarvis", "operations", "deploy", "health"],
   "autoDiscover": {
     "skills": "skills/*",
-    "agents": "agents/*"
-  },
-  "hooks": "./hooks/hooks.json"
+    "agents": "agents/*",
+    "hooks": true
+  }
 }
